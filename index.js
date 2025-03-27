@@ -71,24 +71,34 @@ function updateWeatherUI(data, city) {
 // Function to get weather icons from Icons8 based on Open-Meteo weather codes
 function getWeatherIcon(code) {
     const icons = {
-        0: "https://img.icons8.com/color/96/000000/sun.png",
-        1: "https://img.icons8.com/color/96/000000/partly-cloudy-day.png",
-        2: "https://img.icons8.com/color/96/000000/clouds.png",
-        3: "https://img.icons8.com/color/96/000000/clouds.png",
-        45: "https://img.icons8.com/color/96/000000/fog-day.png",
-        48: "https://img.icons8.com/color/96/000000/fog.png",
-        51: "https://img.icons8.com/color/96/000000/light-rain.png",
-        53: "https://img.icons8.com/color/96/000000/rain.png",
-        55: "https://img.icons8.com/color/96/000000/rain.png",
-        61: "https://img.icons8.com/color/96/000000/rain.png",
-        63: "https://img.icons8.com/color/96/000000/rain.png",
-        65: "https://img.icons8.com/color/96/000000/rain.png",
-        71: "https://img.icons8.com/color/96/000000/snow.png",
-        73: "https://img.icons8.com/color/96/000000/snow.png",
-        75: "https://img.icons8.com/color/96/000000/snow.png",
-        95: "https://img.icons8.com/color/96/000000/storm.png",
-        96: "https://img.icons8.com/color/96/000000/storm.png",
-        99: "https://img.icons8.com/color/96/000000/storm.png"
+        0: "https://img.icons8.com/color/96/000000/sun.png", // Clear sky
+        1: "https://img.icons8.com/color/96/000000/partly-cloudy-day.png", // Mainly clear
+        2: "https://img.icons8.com/color/96/000000/clouds.png", // Partly cloudy
+        3: "https://img.icons8.com/color/96/000000/clouds.png", // Overcast
+        45: "https://img.icons8.com/color/96/000000/fog-day.png", // Fog
+        48: "https://img.icons8.com/color/96/000000/fog.png", // Depositing rime fog
+        51: "https://img.icons8.com/color/96/000000/light-rain.png", // Drizzle: Light
+        53: "https://img.icons8.com/color/96/000000/rain.png", // Drizzle: Moderate
+        55: "https://img.icons8.com/color/96/000000/heavy-rain.png", // Drizzle: Dense
+        56: "https://img.icons8.com/color/96/000000/light-rain.png", // Freezing drizzle: Light
+        57: "https://img.icons8.com/color/96/000000/heavy-rain.png", // Freezing drizzle: Dense
+        61: "https://img.icons8.com/color/96/000000/rain.png", // Rain: Slight
+        63: "https://img.icons8.com/color/96/000000/heavy-rain.png", // Rain: Moderate
+        65: "https://img.icons8.com/color/96/000000/torrential-rain.png", // Rain: Heavy
+        66: "https://img.icons8.com/color/96/000000/light-rain.png", // Freezing rain: Light
+        67: "https://img.icons8.com/color/96/000000/heavy-rain.png", // Freezing rain: Heavy
+        71: "https://img.icons8.com/color/96/000000/snow.png", // Snow: Slight
+        73: "https://img.icons8.com/color/96/000000/snow.png", // Snow: Moderate
+        75: "https://img.icons8.com/color/96/000000/snow-storm.png", // Snow: Heavy
+        77: "https://img.icons8.com/color/96/000000/snow.png", // Snow grains
+        80: "https://img.icons8.com/color/96/000000/rain.png", // Showers: Slight
+        81: "https://img.icons8.com/color/96/000000/heavy-rain.png", // Showers: Moderate
+        82: "https://img.icons8.com/color/96/000000/torrential-rain.png", // Showers: Heavy
+        85: "https://img.icons8.com/color/96/000000/snow.png", // Snow showers: Slight
+        86: "https://img.icons8.com/color/96/000000/snow-storm.png", // Snow showers: Heavy
+        95: "https://img.icons8.com/color/96/000000/storm.png", // Thunderstorm: Slight/Moderate
+        96: "https://img.icons8.com/color/96/000000/storm.png", // Thunderstorm with slight hail
+        99: "https://img.icons8.com/color/96/000000/storm.png"  // Thunderstorm with heavy hail
     };
 
     return icons[code] || "https://img.icons8.com/color/96/000000/unknown.png";
