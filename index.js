@@ -55,7 +55,7 @@ function updateWeatherUI(data, city) {
 
     // Update text content
     cityElement.textContent = city;
-    temperatureElement.textContent = `${roundedTemp}°C`;  // Added °C for clarity
+    temperatureElement.textContent = `${roundedTemp}`;  
     humidityElement.innerHTML = `Humidity: <strong>${data.relative_humidity_2m}%</strong>`;
     windElement.innerHTML = `Wind: <strong>${data.windspeed_10m} km/h</strong>`;
     
