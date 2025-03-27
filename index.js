@@ -126,5 +126,29 @@ document.querySelector("#search-form").addEventListener("submit", function(event
     }
 });
 
+document.querySelector("#toggle-units").addEventListener("click", function() {
+    let tempElement = document.querySelector("#current-temperature");
+    let unitElement = document.querySelector("#temperature-unit");
+
+    if (!tempElement || !unitElement) {
+        console.error("Temperature or unit elements are missing.");
+        return;
+    }
+
+    let currentTemp = parseFloat(tempElement.textContent);
+
+    if (unitElement.textContent.trim() === "°C") {
+        let fahrenheit = (currentTemp * 9/5) + 32;
+        tempElement.textContent = Math.round(fahrenheit);
+        unitElement.textContent = "°F";
+        this.textContent = "Switch to °C";
+    } else {
+        let celsius = (currentTemp - 32) * 5/9;
+        tempElement.textContent = Math.round(celsius);
+        unitElement.textContent = "°C";
+        this.textContent = "Switch to °F";
+    }
+});
+
 // Fetch default weather data when the page loads
 fetchWeather("Paris");
