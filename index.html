@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>My weather application</title>
+    <title>My Weather Application</title>
   </head>
   <body>
     <div class="weather-app">
@@ -32,15 +32,17 @@
           <div>
             <h1 class="current-city" id="current-city">Paris</h1>
             <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="current-date"></span>, <span id="weather-description">moderate rain</span> <br />
+              <span id="humidity">Humidity: <strong>87%</strong></span>,
+              <span id="wind">Wind: <strong>7.2km/h</strong></span>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon" id="weather-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
+            <span class="current-temperature-icon" id="weather-icon">
+              <img src="" alt="Weather Icon" id="weather-icon-img" />
+            </span>
+            <span class="current-temperature-value" id="current-temperature">24</span>
+            <span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
@@ -49,7 +51,7 @@
           This project was coded by
           <a href="#" target="_blank">Esther Mutua</a> and is
           <a href="https://github.com/Esther-pixel31" target="_blank"> on GitHub</a> and
-          <a href="https://66edf78f7b85068862f1b5e3--playful-cucurucho-3477af.netlify.app/" target="_blank">hosted on Netlify</a>
+          <a href="https://66edf78f7b85068862f1b5e3--playful-cucurucho-3477af.netlify.app/" target="_blank">hosted on Github.</a>
         </p>
       </footer>
     </div>
