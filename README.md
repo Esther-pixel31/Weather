@@ -4,10 +4,10 @@
 A simple yet powerful weather application that fetches real-time weather data from the Open-Meteo API. The app allows users to search for cities, view current weather conditions, and toggle between Celsius and Fahrenheit units. The UI is clean, responsive, and user-friendly.
 
 ## Features
-- Fetches weather data using Open-Meteo API 
-- Displays temperature, humidity, wind speed, and weather icons 
-- Allows users to switch between °C and °F
-- Provides a smooth and interactive user experience 
+- Fetches weather data using Open-Meteo API and icons from icon8. 
+- Displays temperature, humidity, wind speed, and weather icons. 
+- Shows the forecast for the next five days.
+- Provides a smooth and interactive user experience.
 
 ## Live Site 
 [View the Live Project](https://esther-pixel31.github.io/Weather/)
