@@ -89,7 +89,7 @@ function updateForecastUI(dailyData) {
         forecastCard.innerHTML = `
             <p class="forecast-day">${days[day]}</p>
             <img src="${getWeatherIcon(weatherCode)}" alt="Weather Icon" class="forecast-icon">
-            <p class="forecast-temp">H: ${maxTemp}°C / L: ${minTemp}°C</p>
+            <p class="forecast-temp">${maxTemp}°C / ${minTemp}°C</p>
         `;
 
         forecastElement.appendChild(forecastCard);
